@@ -45,7 +45,7 @@ function resetYesButtonSize() {
 
 function handleYesClick() {
     // Redirect to the new page
-    window.location.href = "pages/yes_page.html";
+    window.location.href = "yes_page.html";
 }
 
 function moveNoButton() {
