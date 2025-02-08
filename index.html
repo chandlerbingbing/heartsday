@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine, Hallel Borja?</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        body {
+            background: url('https://www.transparenttextures.com/patterns/old-wall.png'), #ffcccb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #ff69b4;
+        }
+
+        .yes-button, .no-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            border-radius: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .yes-button {
+            background: linear-gradient(45deg, #ff69b4, #ff1493);
+            color: white;
+        }
+
+        .yes-button:hover {
+            background: linear-gradient(45deg, #ff1493, #c71585);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .yes-button:active {
+            background: linear-gradient(45deg, #c71585, #ff1493);
+            transform: scale(0.95);
+        }
+
+        .no-button {
+            background: linear-gradient(45deg, #ffcccb, #ff9999);
+            color: black;
+        }
+
+        .no-button:hover {
+            background: linear-gradient(45deg, #ff9999, #ff6666);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .no-button:active {
+            background: linear-gradient(45deg, #ff6666, #ff9999);
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Valentine, Hallel Borja?</h1>
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
+        </div>
+        <div class="gif_container">
+            <img src="https://media.giphy.com/media/3ndAvMC5LFPNMCzq7m/giphy.gif?cid=790b76117ubvnvoejnuibsfwdo2tsmw3ptkbasujd3w8px47&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Cute GIF">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

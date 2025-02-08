@@ -1,0 +1,39 @@
+button {
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #ff3b2e;
+    box-shadow: 0 4px 15px rgba(255, 107, 99, 0.5);
+}
+
+/* Add gradient background and shadow to the buttons */
+.yes-button {
+    background: linear-gradient(45deg, #4caf50, #81c784);
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.5);
+}
+
+.yes-button:hover {
+    background: linear-gradient(45deg, #388e3c, #66bb6a);
+}
+
+.no-button {
+    background: linear-gradient(45deg, #f44336, #e57373);
+    box-shadow: 0 4px 15px rgba(244, 67, 54, 0.5);
+}
+
+.no-button:hover {
+    background: linear-gradient(45deg, #d32f2f, #ef5350);
+}
